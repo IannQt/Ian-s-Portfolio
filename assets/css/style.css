@@ -354,6 +354,7 @@ article.active {
   gap: 8px;
   flex-wrap: wrap;
   margin-top: 5px;
+  width: 100%;
 }
 
 .resume-btn {
@@ -366,7 +367,7 @@ article.active {
   align-items: center;
   justify-content: center;
   flex: 1 1 calc(50% - 4px);
-  min-width: 130px;
+  min-width: 0;
   transition: transform 0.25s ease, filter 0.25s ease, background-color 0.25s ease, border-color 0.25s ease, color 0.25s ease;
   border: 1px solid transparent;
   box-shadow: var(--shadow-1);
@@ -395,6 +396,16 @@ article.active {
   color: var(--btn-primary-text);
 }
 
+@media (max-width: 480px) {
+  .resume-buttons {
+    flex-direction: column;
+  }
+
+  .resume-btn {
+    width: 100%;
+  }
+}
+
 /*-----------------------------------*\
   #MAIN
 \*-----------------------------------*/
@@ -420,7 +431,7 @@ main {
   transition: var(--transition-2);
 }
 
-.sidebar.active { max-height: 405px; }
+.sidebar.active { max-height: 700px; }
 
 .sidebar-info {
   position: relative;
