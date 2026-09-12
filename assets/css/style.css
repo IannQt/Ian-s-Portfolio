@@ -1543,7 +1543,82 @@ body.light-mode .link:hover {
   box-shadow: 0 0 16px rgba(0, 174, 255, 0.18);
 }
 
+/*-----------------------------------*\
+  #TOOLS
+\*-----------------------------------*/
 
+.tools-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-top: 25px;
+}
+
+.tool-item {
+  background: var(--border-gradient-onyx);
+  padding: 25px 15px;
+  border-radius: 14px;
+  text-align: center;
+  border: 1px solid var(--jet);
+  transition: 0.3s ease;
+  cursor: default;
+}
+
+.tool-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.tool-item i {
+  font-size: 55px;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.tool-name {
+  color: var(--white-2);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+
+/*-----------------------------------*\
+  #TOOLS RESPONSIVE
+\*-----------------------------------*/
+
+@media (max-width: 768px) {
+
+  .tools-list {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+  }
+
+  .tool-item {
+    padding: 20px 10px;
+  }
+
+  .tool-item i {
+    font-size: 45px;
+  }
+
+}
+
+@media (max-width: 450px) {
+
+  .tools-list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .tool-item i {
+    font-size: 42px;
+  }
+
+  .tool-name {
+    font-size: 13px;
+  }
+
+}
 
 
 
