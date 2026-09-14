@@ -1562,6 +1562,10 @@ body.light-mode .link:hover {
   border: 1px solid var(--jet);
   transition: 0.3s ease;
   cursor: default;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .tool-item:hover {
@@ -1585,7 +1589,8 @@ body.light-mode .link:hover {
   width: 55px;
   height: 55px;
   object-fit: contain;
-  margin-bottom: 10px;
+  display: block;
+  margin: 0 auto 15px;
 }
 
 
@@ -1608,6 +1613,11 @@ body.light-mode .link:hover {
     font-size: 45px;
   }
 
+  .tool-icon {
+    width: 45px;
+    height: 45px;
+  }
+
 }
 
 @media (max-width: 450px) {
@@ -1619,6 +1629,11 @@ body.light-mode .link:hover {
 
   .tool-item i {
     font-size: 42px;
+  }
+
+  .tool-icon {
+    width: 42px;
+    height: 42px;
   }
 
   .tool-name {
