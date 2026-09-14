@@ -1581,6 +1581,13 @@ body.light-mode .link:hover {
   font-weight: 500;
 }
 
+.tool-icon {
+  width: 55px;
+  height: 55px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
 
 /*-----------------------------------*\
   #TOOLS RESPONSIVE
