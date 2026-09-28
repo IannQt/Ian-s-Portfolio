@@ -1780,6 +1780,34 @@ body.light-mode .link:hover {
   transition: var(--transition-1);
 }
 
+.project-img.project-img-contain {
+  height: auto;
+  aspect-ratio: 16 / 9;
+  isolation: isolate;
+  background: var(--eerie-black-1);
+}
+
+.project-img-contain .project-img-backdrop {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  object-fit: cover;
+  filter: blur(14px) brightness(0.65);
+  transform: scale(1.12);
+}
+
+.project-img-contain .project-img-foreground {
+  position: relative;
+  z-index: 0;
+  object-fit: contain;
+}
+
+.project-img-contain .project-item-icon-box { z-index: 2; }
+
+.project-item > a:hover .project-img-contain .project-img-foreground { transform: none; }
+
+.project-item > a:hover .project-img-contain .project-img-backdrop { transform: scale(1.12); }
+
 .project-item > a:hover img { transform: scale(1.1); }
 
 .project-title,
